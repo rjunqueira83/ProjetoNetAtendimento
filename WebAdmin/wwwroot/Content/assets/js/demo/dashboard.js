@@ -2,7 +2,7 @@
 Template Name: Color Admin - Responsive Admin Dashboard Template build with Twitter Bootstrap 3 & 4
 Version: 4.0.0
 Author: Sean Ngu
-Website: http://www.seantheme.com/color-admin-v4.0/admin/
+Website: 
 */
 
 var handleVectorMap = function() {
@@ -267,14 +267,14 @@ var handleDashboardTodolist = function() {
 var handleDashboardGritterNotification = function() {
     $(window).on('load', function() {
         setTimeout(function() {
-            $.gritter.add({
-                title: 'Welcome back, Admin!',
-                text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus lacus ut lectus rutrum placerat.',
-                image: '../assets/img/user/user-2.jpg',
-                sticky: true,
-                time: '',
-                class_name: 'my-sticky-class'
-            });
+            //$.gritter.add({
+            //    title: 'Welcome back, Admin!',
+            //    text: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempus lacus ut lectus rutrum placerat.',
+            //    image: '../assets/img/user/user-2.jpg',
+            //    sticky: true,
+            //    time: '',
+            //    class_name: 'my-sticky-class'
+            //});
         }, 1000);
     });
 };
@@ -284,7 +284,7 @@ var Dashboard = function () {
     return {
         //main function
         init: function () {
-            handleDashboardGritterNotification();
+            //handleDashboardGritterNotification();
             handleInteractiveChart();
             handleDashboardSparkline();
             handleDonutChart();

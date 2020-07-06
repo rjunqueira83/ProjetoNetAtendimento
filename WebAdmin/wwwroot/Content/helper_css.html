@@ -16,9 +16,9 @@
 	<link href="../assets/plugins/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="../assets/plugins/font-awesome/5.0/css/fontawesome-all.min.css" rel="stylesheet" />
 	<link href="../assets/plugins/animate/animate.min.css" rel="stylesheet" />
-	<link href="../assets/css/default/style.min.css" rel="stylesheet" />
-	<link href="../assets/css/default/style-responsive.min.css" rel="stylesheet" />
-	<link href="../assets/css/default/theme/default.css" rel="stylesheet" id="theme" />
+	<link href="../assets/css/transparent/style.min.css" rel="stylesheet" />
+	<link href="../assets/css/transparent/style-responsive.min.css" rel="stylesheet" />
+	<link href="../assets/css/transparent/theme/default.css" rel="stylesheet" id="theme" />
 	<!-- ================== END BASE CSS STYLE ================== -->
 	
 	<!-- ================== BEGIN BASE JS ================== -->
@@ -26,6 +26,10 @@
 	<!-- ================== END BASE JS ================== -->
 </head>
 <body>
+	<!-- begin page-cover -->
+	<div class="page-cover"></div>
+	<!-- end page-cover -->
+	
 	<!-- begin #page-loader -->
 	<div id="page-loader" class="fade show"><span class="spinner"></span></div>
 	<!-- end #page-loader -->
@@ -154,7 +158,6 @@
 				<ul class="nav">
 					<li class="nav-profile">
 						<a href="javascript:;" data-toggle="nav-profile">
-							<div class="cover with-shadow"></div>
 							<div class="image">
 								<img src="../assets/img/user/user-13.jpg" alt="" />
 							</div>
@@ -356,13 +359,11 @@
 							<li><a href="page_with_ionicons.html">Page with Ionicons</a></li>
 							<li><a href="page_full_height.html">Full Height Content</a></li>
 							<li><a href="page_with_wide_sidebar.html">Page with Wide Sidebar</a></li>
-							<li><a href="page_with_light_sidebar.html">Page with Light Sidebar</a></li>
 							<li><a href="page_with_mega_menu.html">Page with Mega Menu</a></li>
                             <li><a href="page_with_top_menu.html">Page with Top Menu</a></li>
                             <li><a href="page_with_boxed_layout.html">Page with Boxed Layout</a></li>
                             <li><a href="page_with_mixed_menu.html">Page with Mixed Menu</a></li>
                             <li><a href="page_boxed_layout_with_mixed_menu.html">Boxed Layout with Mixed Menu</a></li>
-                            <li><a href="page_with_transparent_sidebar.html">Page with Transparent Sidebar</a></li>
 						</ul>
 					</li>
 					<li class="has-sub">
@@ -476,7 +477,7 @@
 			<!-- end page-header -->
 			
 			<!-- begin nav-tabs -->
-			<ul class="nav nav-tabs nav-tabs-inverse">
+			<ul class="nav nav-tabs">
 				<li class="nav-item"><a href="#general-tab" data-toggle="tab" class="nav-link active"><i class="fa fa-fw fa-lg fa-cogs"></i> <span class="d-none d-lg-inline">General</span></a></li>
                 <li class="nav-item"><a href="#width-height-tab" data-toggle="tab" class="nav-link"><i class="fa fa-fw fa-lg fa-arrows-alt-h"></i> <span class="d-none d-lg-inline">Width & Height</span></a></li>
                 <li class="nav-item"><a href="#text-font-tab" data-toggle="tab" class="nav-link"><i class="fa fa-fw fa-lg fa-text-width"></i> <span class="d-none d-lg-inline">Text & Font</span></a></li>
@@ -498,7 +499,7 @@
                     <div class="table-responsive">
 						<table class="table table-bordered table-condensed">
 							<thead>
-								<tr>
+								<tr class="bg-black-transparent-2">
 									<th width="20%">Row Space</th>
 									<th width="20%">Table</th>
 									<th width="20%">Float</th>
@@ -508,7 +509,7 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr class="bg-silver-lighter">
+								<tr class="bg-black-transparent-8">
 									<td class="p-0">
 										<table class="table table-condensed m-0 bg-none table-no-border-left table-no-border-right table-no-border-bottom">
 											<tbody>
@@ -609,13 +610,13 @@
                     <div class="table-responsive">
 						<table class="table table-bordered table-condensed">
 							<thead>
-								<tr>
+								<tr class="bg-black-transparent-2">
 									<th colspan="2">Width</th>
 									<th colspan="2">Height</th>
 								</tr>
 							</thead>
 							<tbody>
-								<tr class="bg-silver-lighter">
+								<tr class="bg-black-transparent-8">
 									<td class="p-0" width="25%">
 										<table class="table table-condensed m-0 bg-none table-no-border-left table-no-border-right table-no-border-bottom table-no-border-left table-no-border-right table-no-border-bottom">
 											<tbody>
@@ -709,7 +710,7 @@
                     <div class="table-responsive">
 						<table class="table table-bordered table-condensed">
 							<thead>
-								<tr>
+								<tr class="bg-black-transparent-2">
 									<th width="25%">Font Size</th>
 									<th width="25%">Font Weight</th>
 									<th width="25%">Text Align</th>
@@ -717,7 +718,7 @@
 								</tr>
 							</thead>
 							<tbody>
-								<tr class="bg-silver-lighter">
+								<tr class="bg-black-transparent-8">
 									<td class="p-0">
 										<table class="table table-condensed m-0 bg-none table-no-border-left table-no-border-right table-no-border-bottom table-no-border-left table-no-border-right table-no-border-bottom">
 											<tbody>
@@ -784,7 +785,7 @@
                     <div class="table-responsive">
                         <table class="table table-condensed table-bordered">
                             <thead>
-                                <tr>
+								<tr class="bg-black-transparent-2">
                                     <th width="20%">Margin</th>
                                     <th width="20%">Margin Top</th>
                                     <th width="20%">Margin Right</th>
@@ -793,7 +794,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                            	<tr class="bg-silver-lighter">
+                            	<tr class="bg-black-transparent-8">
 									<td class="p-0">
 										<table class="table table-condensed m-0 bg-none table-no-border-left table-no-border-right table-no-border-bottom table-no-border-left table-no-border-right table-no-border-bottom">
 											<tbody>
@@ -907,7 +908,7 @@
                     <div class="table-responsive">
                         <table class="table table-condensed table-bordered">
                             <thead>
-                                <tr>
+								<tr class="bg-black-transparent-2">
                                     <th width="20%">Padding</th>
                                     <th width="20%">Padding Top</th>
                                     <th width="20%">Padding Right</th>
@@ -916,7 +917,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                            	<tr class="bg-silver-lighter">
+                            	<tr class="bg-black-transparent-8">
 									<td class="p-0">
 										<table class="table table-condensed p-0 bg-none table-no-border-left table-no-border-right table-no-border-bottom">
 											<tbody>
@@ -1030,7 +1031,7 @@
                     <div class="table-responsive">
                         <table class="table table-condensed table-bordered">
                             <thead>
-                                <tr>
+								<tr class="bg-black-transparent-2">
                                 	<th width="20%">Blue</th>
                                     <th width="20%">Purple</th>
                                     <th width="20%">Aqua</th>
@@ -1039,7 +1040,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                            	<tr class="bg-silver-lighter">
+                            	<tr class="bg-black-transparent-8">
 									<td class="p-0">
 										<table class="table table-condensed p-0 bg-none table-no-border-left table-no-border-right table-no-border-bottom m-b-0">
 											<tbody>
@@ -1138,7 +1139,7 @@
                             	</tr>
                             </tbody>
                             <thead>
-                                <tr>
+								<tr class="bg-black-transparent-2">
                                     <th width="20%">Orange</th>
                                     <th width="20%">Yellow</th>
                                     <th width="20%">Red</th>
@@ -1147,7 +1148,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                            	<tr class="bg-silver-lighter">
+                            	<tr class="bg-black-transparent-8">
 									<td class="p-0">
 										<table class="table table-condensed p-0 bg-none table-no-border-left table-no-border-right table-no-border-bottom m-b-0">
 											<tbody>
@@ -1246,7 +1247,7 @@
 								</tr>
 							</tbody>
                             <thead>
-                                <tr>
+								<tr class="bg-black-transparent-2">
                                 	<th width="20%">Silver</th>
                                 	<th width="20%">White</th>
                                 	<th width="20%">Extra</th>
@@ -1289,7 +1290,7 @@
 											</tbody>
 										</table>
 									</td>
-									<td class="p-0 bg-silver-lighter">
+									<td class="p-0 bg-black-transparent-8">
 										<table class="table table-condensed p-0 bg-none table-no-border-left table-no-border-right table-no-border-bottom m-b-0">
 											<tbody>
 												<tr><td nowrap class="b-t-0"><div class="bg-none width-20 height-20 pull-left" style="margin: -2px 7px -2px 0; border-radius: 4px;"></div> .bg-none</td></tr>
@@ -1314,7 +1315,7 @@
                     <div class="table-responsive">
                         <table class="table table-condensed table-bordered">
                             <thead>
-                                <tr>
+                                <tr class="bg-black-transparent-2">
                                 	<th width="20%">Blue</th>
                                     <th width="20%">Purple</th>
                                     <th width="20%">Aqua</th>
@@ -1323,7 +1324,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                            	<tr class="bg-silver-lighter">
+                            	<tr class="bg-black-transparent-8">
 									<td class="p-0">
 										<table class="table table-condensed p-0 bg-none table-no-border-left table-no-border-right table-no-border-bottom m-b-0">
 											<tbody>
@@ -1417,7 +1418,7 @@
                             	</tr>
                             </tbody>
                             <thead>
-                                <tr>
+                                <tr class="bg-black-transparent-2">
                                     <th width="20%">Orange</th>
                                     <th width="20%">Yellow</th>
                                     <th width="20%">Red</th>
@@ -1426,7 +1427,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                            	<tr class="bg-silver-lighter">
+                            	<tr class="bg-black-transparent-8">
 									<td class="p-0">
 										<table class="table table-condensed p-0 bg-none table-no-border-left table-no-border-right table-no-border-bottom m-b-0">
 											<tbody>
@@ -1520,7 +1521,7 @@
 								</tr>
 							</tbody>
                             <thead>
-                                <tr>
+                                <tr class="bg-black-transparent-2">
                                 	<th width="20%">Silver</th>
                                 	<th width="20%">White</th>
                                 	<th width="20%">Extra</th>
@@ -1562,7 +1563,7 @@
 											</tbody>
 										</table>
 									</td>
-									<td class="p-0 bg-silver-lighter">
+									<td class="p-0 bg-black-transparent-8">
 										<table class="table table-condensed p-0 bg-none table-no-border-left table-no-border-right table-no-border-bottom m-b-0">
 											<tbody>
 												<tr>
@@ -1596,23 +1597,14 @@
             <div class="theme-panel-content">
                 <h5 class="m-t-0">Color Theme</h5>
                 <ul class="theme-list clearfix">
-                    <li class="active"><a href="javascript:;" class="bg-green" data-theme="default" data-theme-file="../assets/css/default/theme/default.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Default">&nbsp;</a></li>
-                    <li><a href="javascript:;" class="bg-red" data-theme="red" data-theme-file="../assets/css/default/theme/red.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Red">&nbsp;</a></li>
-                    <li><a href="javascript:;" class="bg-blue" data-theme="blue" data-theme-file="../assets/css/default/theme/blue.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Blue">&nbsp;</a></li>
-                    <li><a href="javascript:;" class="bg-purple" data-theme="purple" data-theme-file="../assets/css/default/theme/purple.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Purple">&nbsp;</a></li>
-                    <li><a href="javascript:;" class="bg-orange" data-theme="orange" data-theme-file="../assets/css/default/theme/orange.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Orange">&nbsp;</a></li>
-                    <li><a href="javascript:;" class="bg-black" data-theme="black" data-theme-file="../assets/css/default/theme/black.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Black">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-green" data-theme="green" data-theme-file="../assets/css/transparent/theme/green.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Green">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-red" data-theme="red" data-theme-file="../assets/css/transparent/theme/red.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Red">&nbsp;</a></li>
+                    <li class="active"><a href="javascript:;" class="bg-blue" data-theme="default" data-theme-file="../assets/css/transparent/theme/default.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Default">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-purple" data-theme="purple" data-theme-file="../assets/css/transparent/theme/purple.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Purple">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-orange" data-theme="orange" data-theme-file="../assets/css/transparent/theme/orange.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Orange">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-black" data-theme="black" data-theme-file="../assets/css/transparent/theme/black.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Black">&nbsp;</a></li>
                 </ul>
                 <div class="divider"></div>
-                <div class="row m-t-10">
-                    <div class="col-md-5 control-label double-line">Header Styling</div>
-                    <div class="col-md-7">
-                        <select name="header-styling" class="form-control form-control-sm">
-                            <option value="1">default</option>
-                            <option value="2">inverse</option>
-                        </select>
-                    </div>
-                </div>
                 <div class="row m-t-10">
                     <div class="col-md-5 control-label">Header</div>
                     <div class="col-md-7">
@@ -1650,15 +1642,6 @@
                     </div>
                 </div>
                 <div class="row m-t-10">
-                    <div class="col-md-5 control-label double-line">Content Styling</div>
-                    <div class="col-md-7">
-                        <select name="content-styling" class="form-control form-control-sm">
-                            <option value="1">default</option>
-                            <option value="2">black</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row m-t-10">
                     <div class="col-md-12">
                         <a href="javascript:;" class="btn btn-inverse btn-block btn-sm" data-click="reset-local-storage">Reset Local Storage</a>
                     </div>
@@ -1684,7 +1667,7 @@
 	<![endif]-->
 	<script src="../assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 	<script src="../assets/plugins/js-cookie/js.cookie.js"></script>
-	<script src="../assets/js/theme/default.min.js"></script>
+	<script src="../assets/js/theme/transparent.min.js"></script>
 	<script src="../assets/js/apps.min.js"></script>
 	<!-- ================== END BASE JS ================== -->
 	

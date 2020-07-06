@@ -16,9 +16,9 @@
 	<link href="../assets/plugins/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="../assets/plugins/font-awesome/5.0/css/fontawesome-all.min.css" rel="stylesheet" />
 	<link href="../assets/plugins/animate/animate.min.css" rel="stylesheet" />
-	<link href="../assets/css/default/style.min.css" rel="stylesheet" />
-	<link href="../assets/css/default/style-responsive.min.css" rel="stylesheet" />
-	<link href="../assets/css/default/theme/default.css" rel="stylesheet" id="theme" />
+	<link href="../assets/css/transparent/style.min.css" rel="stylesheet" />
+	<link href="../assets/css/transparent/style-responsive.min.css" rel="stylesheet" />
+	<link href="../assets/css/transparent/theme/default.css" rel="stylesheet" id="theme" />
 	<!-- ================== END BASE CSS STYLE ================== -->
 	
 	<!-- ================== BEGIN PAGE CSS STYLE ================== -->	
@@ -31,6 +31,10 @@
 	<!-- ================== END BASE JS ================== -->
 </head>
 <body>
+	<!-- begin page-cover -->
+	<div class="page-cover"></div>
+	<!-- end page-cover -->
+	
 	<!-- begin #page-loader -->
 	<div id="page-loader" class="fade show"><span class="spinner"></span></div>
 	<!-- end #page-loader -->
@@ -160,7 +164,6 @@
 				<ul class="nav">
 					<li class="nav-profile">
 						<a href="javascript:;" data-toggle="nav-profile">
-							<div class="cover with-shadow"></div>
 							<div class="image">
 								<img src="../assets/img/user/user-13.jpg" alt="" />
 							</div>
@@ -362,13 +365,11 @@
 							<li><a href="page_with_ionicons.html">Page with Ionicons</a></li>
 							<li><a href="page_full_height.html">Full Height Content</a></li>
 							<li><a href="page_with_wide_sidebar.html">Page with Wide Sidebar</a></li>
-							<li><a href="page_with_light_sidebar.html">Page with Light Sidebar</a></li>
 							<li><a href="page_with_mega_menu.html">Page with Mega Menu</a></li>
                             <li><a href="page_with_top_menu.html">Page with Top Menu</a></li>
                             <li><a href="page_with_boxed_layout.html">Page with Boxed Layout</a></li>
                             <li><a href="page_with_mixed_menu.html">Page with Mixed Menu</a></li>
                             <li><a href="page_boxed_layout_with_mixed_menu.html">Boxed Layout with Mixed Menu</a></li>
-                            <li><a href="page_with_transparent_sidebar.html">Page with Transparent Sidebar</a></li>
 						</ul>
 					</li>
 					<li class="has-sub">
@@ -500,13 +501,13 @@
                         <!-- end panel-heading -->
                         <!-- begin panel-body -->
                         <div class="panel-body">
-                            <div class="m-b-2 text-inverse f-w-600 f-s-16">Default Switchery</div>
+                            <div class="m-b-2 text-white f-w-600 f-s-16">Default Switchery</div>
                             <p class="m-b-15">
                                 Use the attribute <code>data-render="switchery"</code> to render the switchery switcher,
                                 and use the attribute <code>data-theme="default"</code> to set the theme color
                             </p>
                             <p class="m-b-25"><input type="checkbox" data-render="switchery" data-theme="default" checked /></p>
-                            <div class="m-b-5 text-inverse f-w-600">All Available Options</div>
+                            <div class="m-b-5 text-white f-w-600">All Available Options</div>
                             <ul class="m-b-10 p-l-30">
                                 <li>theme: <code>data-theme="default"</code></li>
                                 <li>secondary color: <code>data-secondary-color="#dfdfdf"</code></li>
@@ -593,14 +594,14 @@
                         <!-- end panel-heading -->
                         <!-- begin panel-body -->
                         <div class="panel-body">
-                            <div class="m-b-5 text-inverse f-w-600">Checked & Unchecked Switchery</div>
+                            <div class="m-b-5 text-white f-w-600">Checked & Unchecked Switchery</div>
                             <p>
                                 <input type="checkbox" data-render="switchery" data-theme="default" checked />
                                 <span class="text-muted m-l-5 m-r-20">checked</span>
                                 <input type="checkbox" data-render="switchery" data-theme="default" />
                                 <span class="text-muted m-l-5">unchecked</span>
                             </p>
-                            <div class="m-b-5 text-inverse f-w-600">Disabled</div>
+                            <div class="m-b-5 text-white f-w-600">Disabled</div>
                             <p>
                                 <input type="checkbox" data-render="switchery" data-theme="default" data-disabled="true" checked />
                                 <span class="text-muted m-l-5">checked</span>
@@ -609,7 +610,7 @@
                                 <input type="checkbox" data-render="switchery" data-theme="orange" data-disabled="true" checked />
                                 <span class="text-muted m-l-5">unchecked</span>
                             </p>
-                            <div class="m-b-5 text-inverse f-w-600">State</div>
+                            <div class="m-b-5 text-white f-w-600">State</div>
                             <p class="m-b-10">
                                 <input type="checkbox" data-render="switchery" data-theme="black" data-id="switchery-state" checked /> 
                                 <a href="javascript:;" class="btn btn-xs btn-success m-l-5" data-click="check-switchery-state">check state</a>
@@ -645,7 +646,7 @@
 					<div class="row row-space-30">
 						<!-- begin col-4 -->
 						<div class="col-lg-4">
-							<div class="m-b-2 text-inverse f-w-600 f-s-16">Default Powerange</div>
+							<div class="m-b-2 text-white f-w-600 f-s-16">Default Powerange</div>
 							<p class="m-b-10">
 								Use the attribute <code>data-render="poweranger-slider"</code> to render the switchery powerange slider.
 							</p>
@@ -660,7 +661,7 @@
 								<!-- end col-10 -->
 							</div>
 							<!-- end row -->
-							<div class="m-b-5 text-inverse f-w-600">All Available Options</div>
+							<div class="m-b-5 text-white f-w-600">All Available Options</div>
 							<ul class="p-l-30 m-b-20">
 								<li>decimal: <code>data-decimal="false"</code></li>
 								<li>disable: <code>data-disable="false"</code></li>
@@ -677,7 +678,7 @@
 						<!-- end col-4 -->
 						<!-- begin col-4 -->
 						<div class="col-lg-4">
-							<div class="m-b-2 text-inverse f-w-600 f-s-16">Slider Colors</div>
+							<div class="m-b-2 text-white f-w-600 f-s-16">Slider Colors</div>
 							<p class="m-b-10">
 								Available Classes for powerange slider is <code>red</code>, <code>blue</code>,
 								<code>purple</code>, <code>orange</code> and <code>black</code>.
@@ -712,7 +713,7 @@
 						<!-- end col-4 -->
 						<!-- begin col-4 -->
 						<div class="col-lg-4">
-							<div class="m-b-2 text-inverse f-w-600 f-s-16">Horizontal Sliders</div>
+							<div class="m-b-2 text-white f-w-600 f-s-16">Horizontal Sliders</div>
 							<p>
 								Set the attribute <code>data-vertical="true"</code> in order to render the slider as horizontal view.
 							</p>
@@ -759,23 +760,14 @@
             <div class="theme-panel-content">
                 <h5 class="m-t-0">Color Theme</h5>
                 <ul class="theme-list clearfix">
-                    <li class="active"><a href="javascript:;" class="bg-green" data-theme="default" data-theme-file="../assets/css/default/theme/default.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Default">&nbsp;</a></li>
-                    <li><a href="javascript:;" class="bg-red" data-theme="red" data-theme-file="../assets/css/default/theme/red.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Red">&nbsp;</a></li>
-                    <li><a href="javascript:;" class="bg-blue" data-theme="blue" data-theme-file="../assets/css/default/theme/blue.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Blue">&nbsp;</a></li>
-                    <li><a href="javascript:;" class="bg-purple" data-theme="purple" data-theme-file="../assets/css/default/theme/purple.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Purple">&nbsp;</a></li>
-                    <li><a href="javascript:;" class="bg-orange" data-theme="orange" data-theme-file="../assets/css/default/theme/orange.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Orange">&nbsp;</a></li>
-                    <li><a href="javascript:;" class="bg-black" data-theme="black" data-theme-file="../assets/css/default/theme/black.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Black">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-green" data-theme="green" data-theme-file="../assets/css/transparent/theme/green.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Green">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-red" data-theme="red" data-theme-file="../assets/css/transparent/theme/red.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Red">&nbsp;</a></li>
+                    <li class="active"><a href="javascript:;" class="bg-blue" data-theme="default" data-theme-file="../assets/css/transparent/theme/default.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Default">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-purple" data-theme="purple" data-theme-file="../assets/css/transparent/theme/purple.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Purple">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-orange" data-theme="orange" data-theme-file="../assets/css/transparent/theme/orange.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Orange">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-black" data-theme="black" data-theme-file="../assets/css/transparent/theme/black.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Black">&nbsp;</a></li>
                 </ul>
                 <div class="divider"></div>
-                <div class="row m-t-10">
-                    <div class="col-md-5 control-label double-line">Header Styling</div>
-                    <div class="col-md-7">
-                        <select name="header-styling" class="form-control form-control-sm">
-                            <option value="1">default</option>
-                            <option value="2">inverse</option>
-                        </select>
-                    </div>
-                </div>
                 <div class="row m-t-10">
                     <div class="col-md-5 control-label">Header</div>
                     <div class="col-md-7">
@@ -813,15 +805,6 @@
                     </div>
                 </div>
                 <div class="row m-t-10">
-                    <div class="col-md-5 control-label double-line">Content Styling</div>
-                    <div class="col-md-7">
-                        <select name="content-styling" class="form-control form-control-sm">
-                            <option value="1">default</option>
-                            <option value="2">black</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row m-t-10">
                     <div class="col-md-12">
                         <a href="javascript:;" class="btn btn-inverse btn-block btn-sm" data-click="reset-local-storage">Reset Local Storage</a>
                     </div>
@@ -847,7 +830,7 @@
 	<![endif]-->
 	<script src="../assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 	<script src="../assets/plugins/js-cookie/js.cookie.js"></script>
-	<script src="../assets/js/theme/default.min.js"></script>
+	<script src="../assets/js/theme/transparent.min.js"></script>
 	<script src="../assets/js/apps.min.js"></script>
 	<!-- ================== END BASE JS ================== -->
 	

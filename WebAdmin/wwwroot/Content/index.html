@@ -16,9 +16,9 @@
 	<link href="../assets/plugins/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
 	<link href="../assets/plugins/font-awesome/5.0/css/fontawesome-all.min.css" rel="stylesheet" />
 	<link href="../assets/plugins/animate/animate.min.css" rel="stylesheet" />
-	<link href="../assets/css/default/style.min.css" rel="stylesheet" />
-	<link href="../assets/css/default/style-responsive.min.css" rel="stylesheet" />
-	<link href="../assets/css/default/theme/default.css" rel="stylesheet" id="theme" />
+	<link href="../assets/css/transparent/style.min.css" rel="stylesheet" />
+	<link href="../assets/css/transparent/style-responsive.min.css" rel="stylesheet" />
+	<link href="../assets/css/transparent/theme/default.css" rel="stylesheet" id="theme" />
 	<!-- ================== END BASE CSS STYLE ================== -->
 	
 	<!-- ================== BEGIN PAGE LEVEL STYLE ================== -->
@@ -32,6 +32,10 @@
 	<!-- ================== END BASE JS ================== -->
 </head>
 <body>
+	<!-- begin page-cover -->
+	<div class="page-cover"></div>
+	<!-- end page-cover -->
+	
 	<!-- begin #page-loader -->
 	<div id="page-loader" class="fade show"><span class="spinner"></span></div>
 	<!-- end #page-loader -->
@@ -160,7 +164,6 @@
 				<ul class="nav">
 					<li class="nav-profile">
 						<a href="javascript:;" data-toggle="nav-profile">
-							<div class="cover with-shadow"></div>
 							<div class="image">
 								<img src="../assets/img/user/user-13.jpg" alt="" />
 							</div>
@@ -362,13 +365,11 @@
 							<li><a href="page_with_ionicons.html">Page with Ionicons</a></li>
 							<li><a href="page_full_height.html">Full Height Content</a></li>
 							<li><a href="page_with_wide_sidebar.html">Page with Wide Sidebar</a></li>
-							<li><a href="page_with_light_sidebar.html">Page with Light Sidebar</a></li>
 							<li><a href="page_with_mega_menu.html">Page with Mega Menu</a></li>
                             <li><a href="page_with_top_menu.html">Page with Top Menu</a></li>
                             <li><a href="page_with_boxed_layout.html">Page with Boxed Layout</a></li>
                             <li><a href="page_with_mixed_menu.html">Page with Mixed Menu</a></li>
                             <li><a href="page_boxed_layout_with_mixed_menu.html">Boxed Layout with Mixed Menu</a></li>
-                            <li><a href="page_with_transparent_sidebar.html">Page with Transparent Sidebar</a></li>
 						</ul>
 					</li>
 					<li class="has-sub">
@@ -484,7 +485,7 @@
 			<div class="row">
 				<!-- begin col-3 -->
 				<div class="col-lg-3 col-md-6">
-					<div class="widget widget-stats bg-red">
+					<div class="widget widget-stats bg-grey-darker">
 						<div class="stats-icon"><i class="fa fa-desktop"></i></div>
 						<div class="stats-info">
 							<h4>TOTAL VISITORS</h4>
@@ -498,7 +499,7 @@
 				<!-- end col-3 -->
 				<!-- begin col-3 -->
 				<div class="col-lg-3 col-md-6">
-					<div class="widget widget-stats bg-orange">
+					<div class="widget widget-stats bg-green">
 						<div class="stats-icon"><i class="fa fa-link"></i></div>
 						<div class="stats-info">
 							<h4>BOUNCE RATE</h4>
@@ -512,7 +513,7 @@
 				<!-- end col-3 -->
 				<!-- begin col-3 -->
 				<div class="col-lg-3 col-md-6">
-					<div class="widget widget-stats bg-grey-darker">
+					<div class="widget widget-stats bg-orange">
 						<div class="stats-icon"><i class="fa fa-users"></i></div>
 						<div class="stats-info">
 							<h4>UNIQUE VISITORS</h4>
@@ -526,7 +527,7 @@
 				<!-- end col-3 -->
 				<!-- begin col-3 -->
 				<div class="col-lg-3 col-md-6">
-					<div class="widget widget-stats bg-black-lighter">
+					<div class="widget widget-stats bg-red">
 						<div class="stats-icon"><i class="fa fa-clock"></i></div>
 						<div class="stats-info">
 							<h4>AVG TIME ON SITE</h4>
@@ -562,7 +563,7 @@
 					<!-- end panel -->
 					
 					<!-- begin tabs -->
-					<ul class="nav nav-tabs nav-tabs-inverse nav-justified nav-justified-mobile" data-sortable-id="index-2">
+					<ul class="nav nav-tabs nav-justified nav-justified-mobile" data-sortable-id="index-2">
 						<li class="nav-item"><a href="#latest-post" data-toggle="tab" class="nav-link active"><i class="fa fa-camera fa-lg m-r-5"></i> <span class="d-none d-md-inline">Latest Post</span></a></li>
 						<li class="nav-item"><a href="#purchase" data-toggle="tab" class="nav-link"><i class="fa fa-archive fa-lg m-r-5"></i> <span class="d-none d-md-inline">Purchase</span></a></li>
 						<li class="nav-item"><a href="#email" data-toggle="tab" class="nav-link"><i class="fa fa-envelope fa-lg m-r-5"></i> <span class="d-none d-md-inline">Email</span></a></li>
@@ -773,9 +774,9 @@
 								<a class="btn btn-white" href="javascript:;"><i class="fa fa-align-justify"></i></a>
 							</div>
                         </div>
-                        <textarea class="form-control no-rounded-corner bg-silver" rows="14">Enter some comment.</textarea>
+                        <textarea class="form-control no-rounded-corner" rows="14">Enter some comment.</textarea>
                         <div class="panel-footer text-right">
-                            <a href="javascript:;" class="btn btn-white btn-sm">Cancel</a>
+                            <a href="javascript:;" class="btn btn-default btn-sm">Cancel</a>
                             <a href="javascript:;" class="btn btn-primary btn-sm m-l-5">Action</a>
                         </div>
                     </div>
@@ -837,7 +838,7 @@
 						<div class="panel-footer">
 							<form>
 								<div class="input-group">
-									<input type="text" class="form-control bg-silver" placeholder="Enter message" />
+									<input type="text" class="form-control" placeholder="Enter message" />
 									<span class="input-group-append">
 										<button class="btn btn-primary" type="button"><i class="fa fa-pencil-alt"></i></button>
 									</span>
@@ -1032,23 +1033,14 @@
             <div class="theme-panel-content">
                 <h5 class="m-t-0">Color Theme</h5>
                 <ul class="theme-list clearfix">
-                    <li class="active"><a href="javascript:;" class="bg-green" data-theme="default" data-theme-file="../assets/css/default/theme/default.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Default">&nbsp;</a></li>
-                    <li><a href="javascript:;" class="bg-red" data-theme="red" data-theme-file="../assets/css/default/theme/red.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Red">&nbsp;</a></li>
-                    <li><a href="javascript:;" class="bg-blue" data-theme="blue" data-theme-file="../assets/css/default/theme/blue.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Blue">&nbsp;</a></li>
-                    <li><a href="javascript:;" class="bg-purple" data-theme="purple" data-theme-file="../assets/css/default/theme/purple.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Purple">&nbsp;</a></li>
-                    <li><a href="javascript:;" class="bg-orange" data-theme="orange" data-theme-file="../assets/css/default/theme/orange.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Orange">&nbsp;</a></li>
-                    <li><a href="javascript:;" class="bg-black" data-theme="black" data-theme-file="../assets/css/default/theme/black.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Black">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-green" data-theme="green" data-theme-file="../assets/css/transparent/theme/green.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Green">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-red" data-theme="red" data-theme-file="../assets/css/transparent/theme/red.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Red">&nbsp;</a></li>
+                    <li class="active"><a href="javascript:;" class="bg-blue" data-theme="default" data-theme-file="../assets/css/transparent/theme/default.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Default">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-purple" data-theme="purple" data-theme-file="../assets/css/transparent/theme/purple.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Purple">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-orange" data-theme="orange" data-theme-file="../assets/css/transparent/theme/orange.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Orange">&nbsp;</a></li>
+                    <li><a href="javascript:;" class="bg-black" data-theme="black" data-theme-file="../assets/css/transparent/theme/black.css" data-click="theme-selector" data-toggle="tooltip" data-trigger="hover" data-container="body" data-title="Black">&nbsp;</a></li>
                 </ul>
                 <div class="divider"></div>
-                <div class="row m-t-10">
-                    <div class="col-md-5 control-label double-line">Header Styling</div>
-                    <div class="col-md-7">
-                        <select name="header-styling" class="form-control form-control-sm">
-                            <option value="1">default</option>
-                            <option value="2">inverse</option>
-                        </select>
-                    </div>
-                </div>
                 <div class="row m-t-10">
                     <div class="col-md-5 control-label">Header</div>
                     <div class="col-md-7">
@@ -1086,15 +1078,6 @@
                     </div>
                 </div>
                 <div class="row m-t-10">
-                    <div class="col-md-5 control-label double-line">Content Styling</div>
-                    <div class="col-md-7">
-                        <select name="content-styling" class="form-control form-control-sm">
-                            <option value="1">default</option>
-                            <option value="2">black</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="row m-t-10">
                     <div class="col-md-12">
                         <a href="javascript:;" class="btn btn-inverse btn-block btn-sm" data-click="reset-local-storage">Reset Local Storage</a>
                     </div>
@@ -1120,7 +1103,7 @@
 	<![endif]-->
 	<script src="../assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 	<script src="../assets/plugins/js-cookie/js.cookie.js"></script>
-	<script src="../assets/js/theme/default.min.js"></script>
+	<script src="../assets/js/theme/transparent.min.js"></script>
 	<script src="../assets/js/apps.min.js"></script>
 	<!-- ================== END BASE JS ================== -->
 	
@@ -1139,6 +1122,8 @@
 	
 	<script>
 		$(document).ready(function() {
+			COLOR_BLACK_TRANSPARENT_2 = 'rgba(255,255,255,0.15)';
+			COLOR_WHITE = '#333';
 			App.init();
 			Dashboard.init();
 		});
