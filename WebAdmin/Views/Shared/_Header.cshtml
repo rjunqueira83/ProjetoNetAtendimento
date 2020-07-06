@@ -1,0 +1,28 @@
+﻿<header class="main-header">
+    <div id="header" class="header navbar-default">
+        <div class="navbar-header">
+            <a href="@Url.Action("Index", "Home")" class="navbar-brand"><span></span>&nbsp;<b>RB 360®</b></a>
+            <button type="button" class="navbar-toggle" data-click="sidebar-toggled">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        </div>
+        <ul class="navbar-nav navbar-right">
+            <li class="dropdown navbar-user">
+                <a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown">
+                    <img src="../assets/img/user/user-13.jpg" alt="" />
+                    <span class="d-none d-md-inline">Rafael Junqueira</span> <b class="caret"></b>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <a href="javascript:;" class="dropdown-item">Edit Profile</a>
+                    <a href="javascript:;" class="dropdown-item"><span class="badge badge-danger pull-right">2</span> Inbox</a>
+                    <a href="javascript:;" class="dropdown-item">Calendar</a>
+                    <a href="javascript:;" class="dropdown-item">Setting</a>
+                    <div class="dropdown-divider"></div>
+                    <a href="@Url.Action("Login", "Conta")" class="dropdown-item">Sair</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</header>
