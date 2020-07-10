@@ -1,83 +1,127 @@
 ﻿<!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
-    <meta charset="utf-8" />
-    <title> RB 360®</title>
-    <link rel="icon" type="image/ico" href="~/Content/assets/img/logo/logo-bs4.png" />
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport" />
-    <meta content=" RB 360® - Todos os direitos reservados" name="description" />
-    <meta content=" RB 360®" name="author" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Azzara Bootstrap 4 Admin Dashboard</title>
+    <meta content='width=device-width, initial-scale=1.0, shrink-to-fit=no' name='viewport' />
+    <link rel="icon" href="~/Content/assets/img/icon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.syncfusion.com/ej2/18.2.44/bootstrap.css" />
 
-    <!-- ================== BEGIN BASE CSS STYLE ================== -->
-    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
-    <link href="~/Content/assets/plugins/jquery-ui/jquery-ui.min.css" rel="stylesheet" />
-    <link href="~/Content/assets/plugins/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="~/Content/assets/plugins/font-awesome/5.0/css/fontawesome-all.min.css" rel="stylesheet" />
-    <link href="~/Content/assets/plugins/animate/animate.min.css" rel="stylesheet" />
-    <link href="~/Content/assets/css/transparent/style.min.css" rel="stylesheet" />
-    <link href="~/Content/assets/css/transparent/style-responsive.min.css" rel="stylesheet" />
-    <link href="~/Content/assets/css/transparent/theme/transparent.css" rel="stylesheet" id="theme" />
-    <!-- ================== END BASE CSS STYLE ================== -->
-    <!-- ================== BEGIN PAGE LEVEL STYLE ================== -->
-    <link href="~/Content/assets/plugins/jquery-jvectormap/jquery-jvectormap.css" rel="stylesheet" />
-    <link href="~/Content/assets/plugins/bootstrap-datepicker/css/bootstrap-datepicker.css" rel="stylesheet" />
-    <link href="~/Content/assets/plugins/gritter/css/jquery.gritter.css" rel="stylesheet" />
-    <!-- ================== END PAGE LEVEL STYLE ================== -->
-    <!-- ================== BEGIN BASE JS ================== -->
-    @*<script src="~/Content/plugins/pace/pace.min.js"></script>*@
-    <script src="~/Content/assets/css/"></script>
-    <!-- ================== END BASE JS ================== -->
-</head>
-<body>
-
-    <div class="page-cover"></div>
-    <div id="page-loader" class="fade show"><span class="spinner"></span></div>
-    <div id="page-container" class="fade page-sidebar-fixed page-header-fixed">
-        @Html.Partial("_Header")
-        @Html.Partial("_Sidebar")
-        <div class="sidebar-bg"></div>
-        <div id="content" class="content">
-            @RenderBody()
-        </div>
-        <a href="javascript:;" class="btn btn-icon btn-circle btn-success btn-scroll-to-top fade" data-click="scroll-top"><i class="fa fa-angle-up"></i></a>
-    </div>
-
-    <!-- ================== BEGIN BASE JS ================== -->
-    @*<script src="../assets/plugins/jquery/jquery-3.2.1.min.js"></script>*@
-    <script src="~/Content/assets/plugins/jquery/jquery-3.2.1.min.js"></script>
-    <script src="~/Content/assets/plugins/jquery-ui/jquery-ui.min.js"></script>
-    <script src="~/Content/assets/plugins/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
-    <script src="~/Content/assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-    <script src="~/Content/assets/plugins/js-cookie/js.cookie.js"></script>
-    <script src="~/Content/assets/js/theme/transparent.min.js"></script>
-    <script src="~/Content/assets/js/apps.min.js"></script>
-    <!-- ================== END BASE JS ================== -->
-    <!-- ================== BEGIN PAGE LEVEL JS ================== -->
-    <script src="~/Content/assets/plugins/gritter/js/jquery.gritter.js"></script>
-    <script src="~/Content/assets/plugins/flot/jquery.flot.min.js"></script>
-    <script src="~/Content/assets/plugins/flot/jquery.flot.time.min.js"></script>
-    <script src="~/Content/assets/plugins/flot/jquery.flot.resize.min.js"></script>
-    <script src="~/Content/assets/plugins/flot/jquery.flot.pie.min.js"></script>
-    <script src="~/Content/assets/plugins/sparkline/jquery.sparkline.js"></script>
-    <script src="~/Content/assets/plugins/jquery-jvectormap/jquery-jvectormap.min.js"></script>
-    <script src="~/Content/assets/plugins/jquery-jvectormap/jquery-jvectormap-world-mill-en.js"></script>
-    <script src="~/Content/assets/plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
-    <script src="~/Content/assets/js/demo/dashboard.min.js"></script>
-    <!-- ================== END PAGE LEVEL JS ================== -->
-
+    <script src="https://cdn.syncfusion.com/ej2/18.2.44/dist/ej2.min.js"></script>
+    <!-- Fonts and icons -->
+    <script src="~/Content/assets/js/plugin/webfont/webfont.min.js"></script>
     <script>
-        $(document).ready(function () {
-            COLOR_BLACK_transparent_2 = 'rgba(255,255,255,0.15)';
-            COLOR_WHITE = '#333';
-            App.init();
-            Dashboard.init();
+        WebFont.load({
+            google: { "families": ["Open+Sans:300,400,600,700"] },
+            custom: { "families": ["Flaticon", "Font Awesome 5 Solid", "Font Awesome 5 Regular", "Font Awesome 5 Brands"], urls: ['../Content/assets/css/fonts.css'] },
+            active: function () {
+                sessionStorage.fonts = true;
+            }
         });
     </script>
-    @*<script src="@RouteJs.RouteJsHandler.HandlerUrl"></script>
-    <script src="@EnumHandler.HandlerUrl"></script>
-    @Scripts.Render("~/Bundles/js")
-    @RenderSection("ViewSpecificJavascript", required: false)*@
 
+    <!-- CSS Files -->
+    <link rel="stylesheet" href="~/Content/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/assets/css/azzara.min.css">
+
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link rel="stylesheet" href="~/Content/assets/css/demo.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!--
+            Tip 1: You can change the background color of the main header using: data-background-color="blue | purple | light-blue | green | orange | red"
+        -->
+        <div class="main-header" data-background-color="purple">
+            <!-- Logo Header -->
+            <div class="logo-header">
+
+                <a href="index.html" class="logo">
+                    <img src="~/Content/assets/img/logoazzara.svg" alt="navbar brand" class="navbar-brand">
+                </a>
+                <button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fa fa-bars"></i>
+                    </span>
+                </button>
+                <button class="topbar-toggler more"><i class="fa fa-ellipsis-v"></i></button>
+                <div class="navbar-minimize">
+                    <button class="btn btn-minimize btn-rounded">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+            <!-- End Logo Header -->
+            <!-- Navbar Header -->
+            @Html.Partial("_Navbar")
+            <!-- End Navbar -->
+        </div>
+
+        <!-- Sidebar -->
+
+        @Html.Partial("_Sidebar")
+        <!-- End Sidebar -->
+
+        <div class="main-panel">
+            <div class="content">
+                @RenderBody()
+            </div>
+
+        </div>
+        @Html.Partial("_Configurationbar")
+    </div>
+    @*</div>*@
+
+    <!--   Core JS Files   -->
+    <script src="~/Content/assets/js/core/jquery.3.2.1.min.js"></script>
+    <script src="~/Content/assets/js/core/popper.min.js"></script>
+    <script src="~/Content/assets/js/core/bootstrap.min.js"></script>
+
+    <!-- jQuery UI -->
+    <script src="~/Content/assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="~/Content/assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+
+    <!-- jQuery Scrollbar -->
+    <script src="~/Content/assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+
+    <!-- Moment JS -->
+    <script src="~/Content/assets/js/plugin/moment/moment.min.js"></script>
+
+    <!-- Chart JS -->
+    <script src="~/Content/assets/js/plugin/chart.js/chart.min.js"></script>
+
+    <!-- jQuery Sparkline -->
+    <script src="~/Content/assets/js/plugin/jquery.sparkline/jquery.sparkline.min.js"></script>
+
+    <!-- Chart Circle -->
+    <script src="~/Content/assets/js/plugin/chart-circle/circles.min.js"></script>
+
+    <!-- Datatables -->
+    <script src="~/Content/assets/js/plugin/datatables/datatables.min.js"></script>
+
+    <!-- Bootstrap Notify -->
+    <script src="~/Content/assets/js/plugin/bootstrap-notify/bootstrap-notify.min.js"></script>
+
+    <!-- Bootstrap Toggle -->
+    <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.0/js/bootstrap-toggle.min.js"></script>
+
+    <!-- jQuery Vector Maps -->
+    <script src="~/Content/assets/js/plugin/jqvmap/jquery.vmap.min.js"></script>
+    <script src="~/Content/assets/js/plugin/jqvmap/maps/jquery.vmap.world.js"></script>
+
+    <!-- Google Maps Plugin -->
+    <script src="~/Content/assets/js/plugin/gmaps/gmaps.js"></script>
+
+    <!-- Sweet Alert -->
+    <script src="~/Content/assets/js/plugin/sweetalert/sweetalert.min.js"></script>
+
+    <!-- Azzara JS -->
+    <script src="~/Content/assets/js/ready.min.js"></script>
+
+    <!-- Azzara DEMO methods, don't include it in your project! -->
+    <script src="~/Content/assets/js/setting-demo.js"></script>
+    <ejs-scripts></ejs-scripts>
+    @RenderSection("Scripts", required: false)
+    @*<script src="~/Content/assets/js/demo.js"></script>*@
 </body>
 </html>
